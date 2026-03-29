@@ -92,19 +92,6 @@
             <p style="font-size: 0.9em; color: #aaa;">Leave a message on the secure channel.</p>
             <a href="./guest_book.html" class="nav-btn" style="display: block; text-align: center;">Sign Guestbook</a>
           </div>
-
-          <script type="module">
-            import { initAgent } from "https://cdn.jsdelivr.net/npm/clippyjs/dist/index.mjs";
-            import * as agents from "https://cdn.jsdelivr.net/npm/clippyjs/dist/agents/index.mjs";
-            const agent = await initAgent(agents.Clippy);
-            agent.show();
-            agent.speak("Hello! Looks Like You're Trying to Help Your Community.");
-            agent.animate();
-            setTimeout(() => {
-              agent.hide();
-            }, 6000);
-          </script>
-
         </aside>
       </div>
 
