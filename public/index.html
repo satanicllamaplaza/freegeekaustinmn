@@ -97,6 +97,9 @@
             import { initAgent } from "https://cdn.jsdelivr.net/npm/clippyjs/dist/index.mjs";
             import * as agents from "https://cdn.jsdelivr.net/npm/clippyjs/dist/agents/index.mjs";
             const agent = await initAgent(agents.Clippy);
+            const x = (window.innerWidth / 2) - 75;
+            const y = (window.innerHeight / 2) - 75;
+            agent.moveTo(x, y);
             agent.show();
             agent.speak("Hello! Looks Like You're Trying to Help Your Community.");
             agent.animate();
